@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Cleanify",
+    "version": "1.0.0",
+    "description": "Watch anything with family without worry!!!",
+    "icons": {
+        "48": "assets/icon/logo/shield-48.png",
+        "96": "assets/icon/logo/shield-96.png"
+    },
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["<all_urls>"],
+            "js": ["basics.js"]
+        }
+    ],
+    "permissions": []
+}
