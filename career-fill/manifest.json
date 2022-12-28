@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Career-fill",
+    "version": "1.0.0",
+    "description": "Autofill your info on career pages",
+    "icons": {
+        "48": "icon/logo/shield-48.png",
+        "96": "icon/logo/shield-96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["careers.js"]
+        }
+    ],
+    "permissions": []
+}
